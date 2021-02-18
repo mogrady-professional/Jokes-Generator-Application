@@ -292,7 +292,7 @@ jokeForm.addEventListener('submit', async(e) => {
 
     const firstName = firstNameInput.value || 'Chuck';
     const lastName = lastNameInput.value || 'Norris';
-    const url = `https://api.icndb.com/jokes/random?firstName=${firstName}&lastName=${lastName}`;
+    const url = `http://api.icndb.com/jokes/random?firstName=${firstName}&lastName=${lastName}`;
     try {
         const res = await fetch(url);
         const data = await res.json();
