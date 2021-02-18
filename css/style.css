@@ -67,7 +67,7 @@ body {
     background-color: #fff;
     border-radius: 15px;
     padding: 50px 20px;
-    max-width: 100%;
+    max-width: 1200px;
     width: auto;
     text-align: center;
     box-shadow: 25px 25px 50px 50px rgba(0, 0, 0, 0.5);
@@ -81,7 +81,7 @@ h3 {
 }
 
 p {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 
 .joke {
@@ -129,6 +129,22 @@ p {
     display: none;
 }
 
+.categories {
+    line-height: 4em;
+}
+
+.customise h2,
+label {
+    margin-top: 1rem;
+}
+
+hr {
+    border: 0;
+    margin-top: 1rem;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
 @media only screen and (max-width: 952px) {
     label.logo {
         font-size: 1.5rem;
@@ -137,9 +153,26 @@ p {
     nav ul li a {
         font-size: 16px;
     }
+    .container {
+        margin-top: auto;
+        max-width: 400px;
+        overflow-wrap: break-word;
+    }
+    main {
+        overflow: auto;
+    }
 }
 
 @media only screen and (max-width: 1160px) {
+    main {
+        overflow: auto;
+        padding-top: 2rem;
+    }
+    .container {
+        margin-top: auto;
+        max-width: 800px;
+        overflow-wrap: break-word;
+    }
     .checkbtn {
         display: block;
     }
@@ -175,5 +208,16 @@ p {
 @media only screen and (max-width: 500px) {
     label.logo {
         font-size: 1rem;
+    }
+    .container {
+        margin-top: auto;
+        max-width: 400px;
+        overflow-wrap: break-word;
+    }
+    form,
+    input {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 }

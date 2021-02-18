@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes Generator App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Jokes Generator App</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="dad-jokes.html">Dad Jokes</a></li>
+                <li><a class="active" href="chuck-norris-jokes.html">Chuck Norris Facts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <img src="https://assets.chucknorris.host/img/avatar/chuck-norris.png" alt="chucknorris">
+                <h3>Hand Curated Chuck Norris Fact:</h3>
+                <div id="random-joke" class="joke">
+                    <!-- Joke Goes Here Inside the Joke Container -->
+                </div>
+                <button id="random-fact" class="btn">Get Random Fact</button>
+                <p>chucknorris.io API URL <a href="https://api.chucknorris.io/">chucknorris.io</a> <br>Joke Created on: <b id="stat"></b></p>
+            </div>
+            <hr>
+            <div class="categories">
+                <h2>Get Fact From Other Categories:</h2>
+                <button class="btn" id="Animal">Animal</button>
+                <button class="btn" id="Career">Career</button>
+                <button class="btn" id="Celebrity">Celebrity</button>
+                <button class="btn" id="Dev">Dev</button>
+                <button class="btn" id="Explicit">Explicit</button>
+                <button class="btn" id="Fashion">Fashion</button>
+                <button class="btn" id="Food">Food</button>
+                <button class="btn" id="History">History</button>
+                <button class="btn" id="Money">Money</button>
+                <button class="btn" id="Movie">Movie</button>
+                <button class="btn" id="Music">Music</button>
+                <button class="btn" id="Political">Politicial</button>
+                <button class="btn" id="Religion">Religion</button>
+                <button class="btn" id="Science">Science</button>
+                <button class="btn" id="Sport">Sport</button>
+                <button class="btn" id="Travel">Travel</button>
+            </div>
+            <hr>
+            <div class="customise">
+                <h2>Customise a Random Joke with your Name:</h2>
+                <p id="cstmJoke"></p>
+                <form id="jokeForm">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" placeholder="Chuck">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" placeholder="Norris">
+                    <button type="submit" class="btn" style="margin-top: 1rem;">Go</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/chuck-norris-facts.js"></script>
+</body>
+
+</html>

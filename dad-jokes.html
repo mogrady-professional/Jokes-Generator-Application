@@ -19,25 +19,25 @@
             </label>
             <label class="logo">Jokes Generator App</label>
             <ul>
-                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="dad-jokes.html">Dad Jokes</a></li>
-                <li><a href="chuck-norris-jokes.html">Chuck Norris Jokes</a></li>
+                <li><a class="active" href="dad-jokes.html">Dad Jokes</a></li>
+                <li><a href="chuck-norris-jokes.html">Chuck Norris Facts</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="container" style="margin-top: 4rem;  text-transform: capitalize;">
-            <h3>Welcome to my Jokes Generator App</h3>
-            <div>
-                <p><i class="fa fa-laugh-squint"></i> Dad Jokes</p>
-                <p><i class="fa fa-laugh-squint"></i> Chuck Norris Jokes</p>
+        <div class="container" style="margin-top: 4rem;">
+            <h3>Random Dad Joke:</h3>
+            <div id="joke" class="joke">
+                <!-- Joke Goes Here Inside the Joke Container -->
             </div>
-            <br>
-            <p>Full Introduction Details section Coming Soon</p>
-
+            <button id="get_joke" class="btn">Get Another Joke</button>
+            <p>Random Dad Joke API URL <a href="https://icanhazdadjoke.com/">icanhazdadjoke</a></p>
         </div>
     </main>
+
+    <script src="js/dad-jokes.js"></script>
 </body>
 
 </html>
