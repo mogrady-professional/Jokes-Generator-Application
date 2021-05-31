@@ -3,7 +3,7 @@
 Project Focus on Fetch API using JSON, AJAX Version v1.0
 
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/mogrady-git/Jokes-Generator-Application">
-<a href="https://mogrady-git.github.io/Jokes-Generator-Application/"><img alt="GitHub last commit" src="https://img.shields.io/badge/Version%201.0-Launch%20Website-green"></a>
+<a href="https://mogrady-professional.github.io/Jokes-Generator-Application/"><img alt="GitHub last commit" src="https://img.shields.io/badge/Version%201.0-Launch%20Website-green"></a>
 
 ### Future Upgrades To Include
 
